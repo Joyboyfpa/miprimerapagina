@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:LightGray;
+}
+ol,
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h2:active{
+    color: brown;
+}
+/*HEADER START*/
+    header{
+        display:flex;
+        background-color:Gray;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px 0px 0px;
+    }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+        gap: 1.2em;
+    }
+    header nav ul li a{
+        color: black;
+    }
+    header a i{
+        color: black;
+        font-size: 2em;
+        padding: 0.5em;
+    }
+/*HEADER END*/
+
+/*MAIN START*/
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 500px 0px 500px;
+}
+    /* IMAGENES START*/
+    .seccion-1 img{
+        border-radius: 30px;
+        margin: 0px 0px 50px 50px;;
+
+    }
+    .seccion-2 img{
+        width: 100%;
+    }
+    /* IMAGENES END*/
+.acerca-de{
+    text-align: justify;
+}
+.seccion-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20em;
+    margin: 5em;
+}
+.seccion-3 img{
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.seccion-3 p{
+    text-align: justify;
+}
+
+.seccion-3 a{
+    color: rgba(238, 142, 52, 0.699);
+}
+.seccion-3 a:hover{
+    color: rgba(238, 142, 52, 0.699);
+}
+h1{
+    color: rgba(184, 92, 6, 0.699);
+}
+.seccion-1{
+    font-family: sans-serif;
+}
+/*MAIN END*/
+
+/*FOOTER START*/
+    footer{
+        display:flex;
+        background-color:Gray;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px 0px 10px;
+    }
+    footer nav ul{
+        display: flex;
+        gap: 1.2em;
+        margin: 30px 0px 0px 0px;
+    }
+    footer nav ul li a{
+        color: black;
+    }
+/*FOOTER END*/
+a:active{
+    color: white;
+}
+a:hover{
+    font-size: 20px;
+}
+header a i:active{
+    color: white;
+}
+.redes{
+    display:block;
+    background-color:Gray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 20px 10px;
+}
+.redes i{
+    color: black;
+    font-size: 1.1em;
+    margin: 0px 0px 0px 3px;
+}
+.redes i:hover{
+    font-size: 25px;
+}
+.redes i:active{
+    color: white;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header{
+        background-color: bisque;
+    }
+    .seccion-1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 5%;
+    }
+    
+    .seccion-1 div{
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin: 5%;
+    }
+    .seccion-3{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 5em;
+        gap: 20em;
+    }
+    .seccion-3 div p{
+        padding-bottom: 1em;
+    }
+    .seccion-3 div img{
+        padding-top: 1em;
+    }
+    
+    .checkbtn{
+        display: block;
+        position:static;
+        padding-right: 50px;
+    }
+    #encabezado{
+        display: flex;
+        position: fixed;
+        background-color: bisque;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        width: 100%;
+        top: 0%;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        text-align: center;
+        top: 55px;
+        left: 100%;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-family: "Verdana";
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+        color: grey;
+    }
+    #check:checked ~ .checkbtn {
+        color: white;
+    }
+    #encabezado nav ul li a:hover {
+        font-size: 20px;
+        color: black;
+    }
+    #encabezado nav ul li a:active {
+        font-size: 20px;
+        color: white;
+    }
+    #encabezado nav.navbar.active ul li a:hover {
+        font-size: 20px;
+        color: white;
+    }
+}
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  .button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    margin-left: 0.5em;
+    list-style: none;
+  }
+.seccion-4{
+    display: block;
+    border-color: #000;
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type="text"], .form-row input[type="email"]  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+  
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.alertas{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+.greeting p{
+    color: tomato;
+}
+      
+
